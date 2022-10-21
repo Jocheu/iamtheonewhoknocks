@@ -14,10 +14,11 @@ class MainActivity : AppCompatActivity() {
         val txt = findViewById<EditText>(R.id.txtbox)
         val naTekst = findViewById<TextView>(R.id.textView)
         findViewById<Button>(R.id.btn1).setOnClickListener {
-            naTekst.text = txt.text
+            naTekst.text = naTekst.text.toString() + txt.text.toString()
+            txt.text.clear()
         }
         findViewById<Button>(R.id.btn2).setOnClickListener {
-            naTekst.text = R.string.imie.toString()
+            naTekst.text = "Joachim Psuty-Lipski"
             txt.text.clear()
         }
     }
