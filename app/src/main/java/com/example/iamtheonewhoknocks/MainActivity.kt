@@ -11,13 +11,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //aaa
-        var txt = findViewById<EditText>(R.id.txtbox)
-        var naTekst = findViewById<TextView>(R.id.textView)
+        val txt = findViewById<EditText>(R.id.txtbox)
+        val naTekst = findViewById<TextView>(R.id.textView)
         findViewById<Button>(R.id.btn1).setOnClickListener {
             naTekst.text = txt.text
         }
         findViewById<Button>(R.id.btn2).setOnClickListener {
-            naTekst.text = "Joachim Psuty-Lipski"
+            naTekst.text = R.string.imie.toString()
             txt.text.clear()
         }
     }
